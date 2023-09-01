@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+
+
+int main(){
+  
+  int n1, n2, res, op;
+  do {
+  printf ("Digite um número:\n");
+  scanf ("%d",&n1);
+  printf ("Digite outro número:\n");
+  scanf ("%d",&n2);
+  printf("Escolha a operação:\n1 - Adição\n2 - Subtração\n3 - Multiplicação\n4 - Divisão\n");
+  scanf("%d",&op);
+  if (op==1){
+
+    res = n1+n2;
+  }
+  if (op==2){
+
+    res=n1-n2;
+  }
+  if (op==3){
+
+    res=n1*n2;
+  }
+  if (op==4){
+    res = n1/n2;
+  }
+
+  printf("O resultado é %d\n", res);
+  
+  
+
+   
+  } 
+    while (op!=0);
+
+return 0;
+}
